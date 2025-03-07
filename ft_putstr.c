@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/05 18:07:23 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/03/06 23:52:50 by aaugusto         ###   ########.fr       */
+/*   Created: 2025/03/06 16:32:40 by aaugusto          #+#    #+#             */
+/*   Updated: 2025/03/06 23:40:08 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include "libft/libft.h"
-# include <unistd.h>
-# include <stdarg.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <limits.h>
+int	ft_putstr(char *str)
+{
+	int len;
 
-int		ft_printf(const char *str, ...);
-int		ft_putchar(char c);
-int		ft_putstr(char *str);
-int		ft_print_pointer(void *pointer);
-int    ft_putnumber(int nb);
-#endif
+	len = 0;
+	while (str[len])
+		ft_putchar(str[len++]);
+	return (len);
+}
