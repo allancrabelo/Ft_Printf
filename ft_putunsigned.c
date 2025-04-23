@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 10:19:17 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/04/19 10:06:29 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/23 10:32:57 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,13 @@ static unsigned int	ft_countdig(unsigned int n)
 	return (res);
 }
 
-char    *ft_itoa_long(unsigned int n)
+char	*ft_itoa_long(unsigned int n)
 {
 	char			*res;
 	unsigned int	dig;
 	unsigned int	num;
 
+	num = n;
 	dig = ft_countdig(num);
 	res = malloc((dig + 1) * sizeof(char));
 	if (!res)
@@ -56,10 +57,10 @@ int	ft_putunsigned(unsigned int n)
 	char	*temp;
 	size_t	len;
 
-	if (!n)
-		return (write(1, "0", 1));
 	temp = ft_itoa_long(n);
-	ft_putchar_fd(*temp, 1);
+	if (!temp)
+		return (0);
+	ft_putstr_fd(temp, 1);
 	len = ft_strlen(temp);
 	free(temp);
 	return (len);

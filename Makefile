@@ -2,11 +2,18 @@ NAME = libftprintf.a
 CC = cc
 CCFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_printf.c ft_putchar.c ft_putstr.c ft_putnumber.c ft_putunsigned.c ft_putpointer.c
+SRCS = ft_printf.c ft_putchar.c ft_putstr.c ft_putnumber.c ft_putunsigned.c ft_putpointer.c ft_puthex.c
 
 OBJS = $(SRCS:.c=.o)
 
-all: $(NAME)
+LIBFT_DIR = libft
+SRCS_DIR = .
+
+all: libft $(NAME)
+
+libft:
+	$(MAKE) -C $(LIBFT_DIR)
+	cp $(LIBFT_DIR)/libft.a $(NAME)
 
 $(NAME): $(OBJS)
 	make -C libft
@@ -23,5 +30,7 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
 
 .SILENT:

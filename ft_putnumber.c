@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 23:11:09 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/04/17 10:20:41 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/23 10:30:49 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_putnumber(int nb)
 {
 	int	len;
-	
+
 	len = 0;
 	if (nb == -2147483648)
 	{

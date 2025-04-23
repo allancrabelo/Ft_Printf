@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 10:25:23 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/04/19 10:24:34 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/23 10:30:32 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 static size_t	ft_len_puthex(unsigned int n)
 {
-	size_t	digits = 0;
+	size_t	digits;
 
+	digits = 0;
 	if (n == 0)
 		return (1);
 	while (n != 0)

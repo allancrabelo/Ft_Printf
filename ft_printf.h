@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:07:23 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/04/17 18:09:38 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/23 09:55:05 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int	ft_putstr(char *str);
 int	ft_putpointer(void *pointer);
 int	ft_putnumber(int nb);
 int	ft_putunsigned(unsigned int n);
+int	ft_puthex(unsigned int n, char up_or_low);
 
 #endif
