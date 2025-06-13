@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 18:13:31 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/04/18 10:44:31 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/23 15:30:27 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,33 +49,10 @@ int	ft_printf(const char *str, ...)
 			len += ft_conversions(str[++i], arglist);
 		else
 		{
-			ft_putchar_fd(str[i], 1);
+			ft_putchar(str[i]);
 			len++;
 		}
 	}
 	va_end(arglist);
 	return (len);
 }
-/*  int	main(void)
-{
-	char c = 'c';
-	char *str = "string";
-	int ptr = 42;
-	long int nbr = -21474836480;
-	int nbr2 = 42;
-	ft_printf("Print char 'c': %c", c);
-	ft_printf("\n");
-	ft_printf("Print string 'string': %s", str);
-	ft_printf("\n");
-	ft_printf("Print pointer 'ptr': %p", &ptr);
-	ft_printf("\n");
-	ft_printf("Print number 'nbr': %d", nbr);
-	ft_printf("\n");
-	ft_printf("Print number 'nbr2': %i", nbr2);
-	ft_printf("\n");
-	ft_printf("Print Unsigned 'nbr': %u", 22222222222222222222222);
-	ft_printf("\n");
-	printf("Print Unsigned 'nbr': %u", NULL);
-	ft_printf("\n");
-	return (0);
-}  */
