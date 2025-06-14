@@ -11,6 +11,71 @@ By reconstructing this function in `ft_printf`, you're not just learning to prog
 
 `ft_printf` is a manual reimplementation of the classic C `printf` function. Without relying on standard formatting libraries (`<stdio.h>`), we’re challenged to build a robust system that accepts multiple types, formats strings, converts integers, hexadecimals, and pointers — all while respecting precision, flags, and more.
 
+
+```mermaid
+---
+title: Ft_Printf Flow & Logic (Expanded Layout)
+---
+classDiagram
+
+    class Ft_Printf {
+        + Iterates through format string  
+        + Detects '%' specifier  
+        + Calls print_* functions  
+    }
+
+    class va_list {
+        + Accesses variadic arguments  
+        + Uses va_start  
+        + Uses va_arg  
+        + Uses va_end  
+    }
+
+    class ft_putchar {
+        + Prints a single character  
+    }
+
+    class ft_putstr {
+        + Prints a string or "(null)"  
+    }
+
+    class ft_putnumber {
+        + Prints signed integer  
+    }
+
+    class ft_putunsigned {
+        + Prints unsigned integer  
+    }
+
+    class ft_puthex {
+        + Prints hexadecimal number  
+        + Supports lowercase (x) and uppercase (X)  
+    }
+
+    class ft_putpointer {
+        + Prints pointer address in hexadecimal  
+        + Format: 0x...  
+    }
+
+    class write {
+        + System call: write()  
+        + Sends output to stdout  
+    }
+
+    %% Connections from ft_printf
+    Ft_Printf --> va_list
+    Ft_Printf --> ft_putchar
+    Ft_Printf --> ft_putstr
+    Ft_Printf --> ft_putnumber
+    Ft_Printf --> ft_putunsigned
+    Ft_Printf --> ft_puthex
+    Ft_Printf --> ft_putpointer
+
+    %% Output handling
+    ft_print* --> write
+
+```
+
 ## 🧠 What You Will Master
 
 While building `ft_printf`, I'll internalize fundamental low-level concepts that shape every high-performance language:
