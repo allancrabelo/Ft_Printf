@@ -7,6 +7,22 @@ From the first Sumerian records carved into clay tablets to the dot-matrix print
 Created in 1972 with the C programming language by Dennis Ritchie, `printf` assumed the ancestral role of turning logic into visible language.  
 By reconstructing this function in `ft_printf`, you're not just learning to program — you're reenacting the very history of civilization, line by line, byte by byte.
 
+## 🏅 125% Performance in the Project
+
+During the ft_printf project evaluation, I achieved the maximum score of 100%, the result of delivering all mandatory and bonus functionalities with precision, while fully meeting the technical standards required, including:
+
+    ✅ Correct and efficient reimplementation of all standard printf behaviors
+    ✅ Handling of complex format specifiers and flags
+    ✅ Full compliance with Norminette coding standards
+    ✅ Zero memory leaks (Valgrind clean)
+    ✅ Implementation of bonus features, such as extended format support and robust edge-case handling
+
+This score demonstrates not only deep understanding of C and formatted output logic, but also a strong commitment to code quality, performance, and low-level programming practices — essential values at the core of the 42 curriculum.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f3a5d881-f36f-440e-bd37-9d618c395e44" alt="Imagem" />
+</p>
+
 ## 💡 About the Project
 
 `ft_printf` is a manual reimplementation of the classic C `printf` function. Without relying on standard formatting libraries (`<stdio.h>`), we’re challenged to build a robust system that accepts multiple types, formats strings, converts integers, hexadecimals, and pointers — all while respecting precision, flags, and more.
