@@ -198,6 +198,8 @@ If you're also doing the Piscine, feel free to suggest improvements or share new
     📬 Contact: If you'd like to discuss solutions or exchange ideas, find me on Discord or GitHub!
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7c2a1d11-750e-499b-b3c4-0e470ed317e3" alt="Imagem" />
+  <a href="https://github.com/allancrabelo" target="_blank" rel="noopener noreferrer">
+    <img src="https://github.com/user-attachments/assets/b3000019-31b9-4735-90c2-ea1a72601c1c" alt="Imagem" />
+  </a>
 </p>
 
