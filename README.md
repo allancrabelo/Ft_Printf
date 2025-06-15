@@ -164,6 +164,18 @@ make fclean
 make re
 ```
 
+## 🧪 Compile and Test with a Custom Main
+
+To test your implementation using your own main.c, you can compile it like this:
+
+```
+cc  main.c libftprintf.a 
+```
+
+    🔹 Make sure you have already run make so that libftprintf.a exists.
+    🔹 The main.c file should include #include "ft_printf.h" to access your functions.
+    🔹 It is acceptable to ignore warnings during compilation, as they are expected for testing the scope and analyzing the results of the project.
+    
 ### 🌍 Vision and Impact
 
 `ft_printf` is not just a technical exercise — it's a foundation. It teaches how complex systems interpret, translate, and display reality. From server logs to game console messages, every system communicates. And every digital communication begins with a `print`.
