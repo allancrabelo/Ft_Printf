@@ -80,7 +80,7 @@ printf("wtf is happening\n");
 > and can handle `(null)` with grace and compassion,
 > then… you may proceed to the next level.”
 
-## 🏅 125% Performance in the Project
+## 🏅 100% Performance in the Project
 
 During the ft_printf project evaluation, I achieved the maximum score of 100%, the result of delivering all mandatory and bonus functionalities with precision, while fully meeting the technical standards required, including:
 
