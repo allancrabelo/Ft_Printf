@@ -257,13 +257,6 @@ By building yours from scratch, you step into the heart of software engineering.
 
 ---
 
-## 🧙 Alan Kay 
-
-> “Reimplementing `printf` isn’t reinventing the wheel.
-> It’s understanding **why the hell the wheel spins in the first place.**”
-
-
-
 # 🚧 Tutorials (Coming Soon)
 
 I'm currently working on a detailed tutorial to help others navigate the FT_PRINTF project more efficiently. This section will include:
