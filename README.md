@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"></img>
+
 ![Design sem nome(6)](https://github.com/user-attachments/assets/87775e05-7e9b-4b2a-abe8-9f39b58bd63c)
 
 # 🧠 From Stone Tablets to Syscalls
